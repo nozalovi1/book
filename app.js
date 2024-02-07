@@ -1,13 +1,14 @@
-class Book {
-    constructor(title, author) {
-        this.title = title;
-        this.author = author;
+class Animal {
+    constructor(name, sound) {
+      this.name = name;
+      this.sound = sound;
     }
-
-    getDetails() {
-        return `Title: ${this.title}, Author: ${this.author}`;
+  
+    makeSound() {
+      console.log(`${this.name}-ს ხმა: ${this.sound}`);
     }
-}
-
-const myBook = new Book("გაერთიანებული");
-console.log(myBook.getDetails()); 
+  }
+  
+  const dog = new Animal("ძაღლი", "woof!");
+  dog.makeSound();
+  
